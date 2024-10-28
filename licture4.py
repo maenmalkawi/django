@@ -23,3 +23,13 @@
 # go to the setting.py make debug=False // allowed_hosts=[]'*'] (We make the debug=true for check the error in our website)
 
 # then check if the file active >> then run server to check
+
+# we make moduls.py >> in this model we put information like (name,phone,....) and this information have a propareties (decimalFields,charFields)
+
+# in moduls we make class name (models.model) : phone = charFields(max_length=10) >> def__str__(self): return self.phone
+
+# then we go to view.py >> from .models import class name >> then go to the function and definiton variable like users= users.object.all()for give me all users
+
+# then save it in context "users":users (context use for give all information to html part)
+
+# then in html file we make for loop {% for user in users %} >> <p> Users: {{user.name}} </p> {% end for %} we used for loop to show the data
